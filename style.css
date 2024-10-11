@@ -1,0 +1,54 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    width: 100%;
+    height: 100vh;
+    /* background: linear-gradient(to bottom, #fedf00, #ffffff); */
+    background: #fedf00;
+    animation-duration: 0.01s;
+    animation-name: textflicker;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+marquee
+{
+    height: 100vh; 
+}
+marquee img
+{
+    width: 10%;
+}
+
+
+
+
+
+
+/* things for crt filter */
+h1 
+{ 
+    font-size: 5em; 
+    text-align: center;
+}
+
+a
+{
+    color: white;
+}
+  
+@keyframes textflicker 
+{
+    from 
+    {
+      text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
+    }
+    to 
+    {
+      text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
+    }
+}
